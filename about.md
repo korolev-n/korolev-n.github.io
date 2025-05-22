@@ -4,5 +4,7 @@ title: "about"
 permalink: /about/
 ---
 
-Привет! 👋  
+about
 
+## Контакты
+- [💬 Обсудить](https://github.com/korolev-n/korolev-n.github.io/discussions){:target="_blank"}
