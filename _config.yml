@@ -1,4 +1,71 @@
-title: "Мой блог"
+title: "Наименование"
+description: "Описание"
+url: "https://korolev-n.github.io" # замени на адрес репозитория/домена
+baseurl: "" # если используешь GitHub Pages как username.github.io
+
+# Тема
 remote_theme: "mmistakes/minimal-mistakes"
+
+# Автор
+author:
+  name: "Имя"
+  avatar: "/assets/images/avatar.jpg"
+  bio: "bio"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/korolev-n"
+
+# Социальные ссылки (опционально)
+social:
+  type: Person
+  name: "Твоё Имя"
+  links:
+    - "https://github.com/korolev-n""
+    - "mailto:korolev.n@hotmail.com"
+
+# Навигация
+header:
+  nav:
+    - title: "Главная"
+      url: /
+    - title: "TIL"
+      url: /til/
+    - title: "Обо мне"
+      url: /about/
+
+# Плагины
 plugins:
+  - jekyll-feed
+  - jekyll-sitemap
   - jekyll-remote-theme
+
+# Markdown и синтаксис
+markdown: kramdown
+highlighter: rouge
+
+# Посты
+paginate: 5
+paginate_path: "/page:num/"
+
+# Теги и категории
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+
+# Build
+theme: null
+exclude: ["node_modules", "vendor", "Gemfile*", "README.md"]
