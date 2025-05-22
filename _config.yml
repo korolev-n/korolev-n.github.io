@@ -1,12 +1,10 @@
 title: "Наименование"
 description: "Описание"
-url: "https://korolev-n.github.io" # замени на адрес репозитория/домена
-baseurl: "" # если используешь GitHub Pages как username.github.io
+url: "https://korolev-n.github.io"
+baseurl: ""
 
-# Тема
 remote_theme: "mmistakes/minimal-mistakes"
 
-# Автор
 author:
   name: "Имя"
   avatar: "/assets/images/avatar.jpg"
@@ -16,15 +14,13 @@ author:
       icon: "fab fa-github"
       url: "https://github.com/korolev-n"
 
-# Социальные ссылки (опционально)
 social:
   type: Person
   name: "Твоё Имя"
   links:
-    - "https://github.com/korolev-n""
+    - "https://github.com/korolev-n"
     - "mailto:korolev.n@hotmail.com"
 
-# Навигация
 header:
   nav:
     - title: "Главная"
@@ -34,21 +30,17 @@ header:
     - title: "Обо мне"
       url: /about/
 
-# Плагины
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-remote-theme
 
-# Markdown и синтаксис
 markdown: kramdown
 highlighter: rouge
 
-# Посты
 paginate: 5
 paginate_path: "/page:num/"
 
-# Теги и категории
 collections:
   posts:
     output: true
@@ -66,6 +58,5 @@ defaults:
       share: true
       related: true
 
-# Build
 theme: null
 exclude: ["node_modules", "vendor", "Gemfile*", "README.md"]
